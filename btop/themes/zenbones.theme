@@ -1,0 +1,83 @@
+# All graphs and meters can be gradients
+# For single color graphs leave "mid" and "end" variable empty.
+# Use "start" and "end" variables for two color gradient
+# Use "start", "mid" and "end" for three color gradient
+
+# Main background, empty for terminal default, need to be empty if you want transparent background
+theme[main_bg]=
+
+# Main text color
+theme[main_fg]="#b77e64"
+
+# Title color for boxes
+theme[title]="#D39C5B"
+
+# Higlight color for keyboard shortcuts
+theme[hi_fg]="#c5c6c2"
+
+# Background color of selected item in processes box
+theme[selected_bg]="#6b705c"
+
+# Foreground color of selected item in processes box
+theme[selected_fg]="#c5c6c2"
+
+# Color of inactive/disabled text
+theme[inactive_fg]="#9EAB9C"
+
+# Misc colors for processes box including mini cpu graphs, details memory graph and details status text
+theme[proc_misc]="#949D6B"
+
+# Cpu box outline color
+theme[cpu_box]="#D39C5B"
+
+# Memory/disks box outline color
+theme[mem_box]="#D39C5B"
+
+# Net up/down box outline color
+theme[net_box]="#D39C5B"
+
+# Processes box outline color
+theme[proc_box]="#D39C5B"
+
+# Box divider line and small boxes line color
+theme[div_line]="#B77E64"
+
+# Temperature graph colors
+theme[temp_start]="#D39C5B"
+theme[temp_mid]="#949D6B"
+theme[temp_end]="#6C9464"
+
+# CPU graph colors
+theme[cpu_start]="#D39C5B"
+theme[cpu_mid]="#949D6B"
+theme[cpu_end]="#6C9464"
+
+# Mem/Disk free meter
+theme[free_start]="#D39C5B"
+theme[free_mid]="#949D6B"
+theme[free_end]="#6C9464"
+
+# Mem/Disk cached meter
+theme[cached_start]="#D39C5B"
+theme[cached_mid]="#949D6B"
+theme[cached_end]="#6C9464"
+
+# Mem/Disk available meter
+theme[available_start]="#D39C5B"
+theme[available_mid]="#949D6B"
+theme[available_end]="#6C9464"
+
+# Mem/Disk used meter
+theme[used_start]="#D39C5B"
+theme[used_mid]="#949D6B"
+theme[used_end]="#6C9464"
+
+# Download graph colors
+theme[download_start]="#D39C5B"
+theme[download_start_mid]="#949D6B"
+theme[download_end]="#6C9464"
+
+# Upload graph colors
+theme[upload_start]="#D39C5B"
+theme[upload_mid]="#949D6B"
+theme[upload_end]="#6C9464"

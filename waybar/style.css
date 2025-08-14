@@ -1,0 +1,378 @@
+
+* {
+    font-family: "JetBrains Mono", "Font Awesome 6 Free", FontAwesome, Roboto, Helvetica, Arial, sans-serif;
+    font-size: 14px;  /* Slightly smaller font size */
+    font-weight: 900;
+    margin: 0;
+    padding: 0;
+    transition-property: background-color;
+    transition-duration: 0.5s;
+}
+
+/* Reset all styles */
+* {
+    border: solid;
+    border-radius: 3px;
+    min-height: 0;
+    margin: 0.1em 0.2em 0.1em 0.2em;
+}
+
+/* The whole bar */
+#waybar {
+    background-color: transparent;
+    color: rgba(0,0,0,0.9);
+    transition-property: background-color;
+    transition-duration: 0.5s;
+    border-radius: 0px;
+    margin: 0px 0px;
+}
+
+window#waybar.hidden {
+  opacity: 0.2;
+}
+
+#workspaces button {
+    padding: 3px 3px;  /* Adjusted padding to reduce height */
+    margin: 3px 3px;    /* Reduced margin slightly */
+    border-radius: 6px;
+    color: #6C9464;
+    background: transparent;
+    transition: all 0.3s ease-in-out;
+    font-size: 13px;  /* Slightly smaller font size */
+}
+
+#workspaces button.active {
+    color: #6C9464;
+}
+
+#workspaces button:hover {
+    background: transparent;
+}
+
+#workspaces button.urgent {
+    background-color: #eb4d4b;
+}
+
+#workspaces {
+    border: solid 2px #6C9464;
+    background-color: rgba(0,0,0,0.9);
+    border-radius: 5px;
+    padding: 3px 6px;  /* Adjusted padding to reduce height */
+}
+
+#window {
+    
+    background-color: rgba(0,0,0,0.9);
+    font-size: 15px;   /* Slightly smaller font size */
+    font-weight: 800;
+    color: #6C9464;
+    border-radius: 5px;
+    padding: 3px 6px;  /* Reduced padding */
+    margin: 1px;
+    border: solid 2px #6C9464;
+    opacity: 1;
+}
+
+#custom-window_icon {
+  
+  background-color: rgba(0,0,0,0.9);
+  padding: 6px 6px;
+  font-size: 20px;
+  color: #dedede;
+}
+
+#clock,
+#battery,
+#cpu,
+#memory,
+#disk,
+#temperature,
+#backlight,
+#network,
+#pulseaudio,
+#wireplumber,
+#custom-media,
+#mode,
+#idle_inhibitor,
+#mpd,
+#bluetooth,
+#custom-lock
+#custom-hyprPicker,
+#custom-power-menu,
+#custom-spotify,
+#custom-weather,
+#custom-weather.severe,
+#custom-weather.sunnyDay,
+#custom-weather.clearNight,
+#custom-weather.cloudyFoggyDay,
+#custom-weather.cloudyFoggyNight,
+#custom-weather.rainyDay,
+#custom-weather.rainyNight,
+#custom-weather.showyIcyDay,
+#custom-weather.snowyIcyNight,
+#custom-weather.default {
+    background-color: rgba(0,0,0,0.9);
+    border-radius: 5px;
+    padding: 6px;  /* Adjusted padding */
+}
+
+#custom-lockpower {
+    border: solid 2px #6C9464;
+    color: #6C9464;
+    background-color: rgba(0,0,0,0.9);
+    border-radius: 5px;
+    padding: 6px;
+}
+
+#custom-betterwindow {
+    font-size: 24px;
+    color: #dedede;
+    background-color: rgba(0,0,0,0.9);
+    border-radius: 5px;
+    padding: 6px
+}
+
+#custom-lock,
+#custom-power {
+  border: solid 2px #6C9464;
+  background-color: rgba(0,0,0,0.9);  
+  border-radius: 5px;
+  padding: 6px;
+  color: #dedede;
+  margin-right: 4px;
+}
+
+#custom-screenshot_t {    
+    background-color: rgba(0,0,0,0.9);
+    border-radius: 5px;
+    padding: 6px;
+}
+
+#custom-spotify {
+    background-color: rgba(0,0,0,0.9);
+    border-radius: 5px;
+    padding: 3px 11px;
+}
+
+#tray {    
+    background-color: rgba(0,0,0,0.9);
+    border-radius: 5px;
+    padding: 6px;  /* Adjusted padding */
+}
+
+#cpu {
+    border: solid 2px #6C9464;
+    color: #fb958b;
+    background-color: rgba(0,0,0,0.9);
+    padding: 6px;
+}
+
+#memory {
+    border: solid 2px #6C9464;
+    color: #6C9464;
+    background-color: rgba(0,0,0,0.9);
+    padding: 6px;
+}
+
+#custom-storage {    
+    border: solid 2px #6C9464;
+    color: #6C9464;
+    background-color: rgba(0,0,0,0.9);
+    border-radius: 5px;
+    padding: 6px;
+}
+
+#custom-rofi {
+    border: solid 2px #6C9464;
+    color: #6C9464;
+    background-color: rgba(0,0,0,0.9);
+    border-radius: 5px;
+    padding: 6px;
+}
+
+#custom-launcher {
+    background-color: #1b242b;
+    color: #6a92d7;
+    border-radius: 7.5px;
+    padding: 3px 6px;  /* Adjusted padding */
+}
+
+#custom-weather.severe {
+    color: #eb937d;
+}
+
+#custom-weather.sunnyDay {
+    color: #c2ca76;
+}
+
+#custom-weather.clearNight {
+    color: #cad3f5;
+}
+
+#custom-weather.cloudyFoggyDay,
+#custom-weather.cloudyFoggyNight {
+    color: #c2ddda;
+}
+
+#custom-weather.rainyDay,
+#custom-weather.rainyNight {
+    color: #5aaca5;
+}
+
+#custom-weather.showyIcyDay,
+#custom-weather.snowyIcyNight {
+    color: #d6e7e5;
+}
+
+#custom-weather.default {
+    color: #dbd9d8;
+}
+
+/* If workspaces is the leftmost module, omit left margin */
+.modules-left > widget:first-child > #workspaces {
+    margin-left: 0;
+}
+
+/* If workspaces is the rightmost module, omit right margin */
+.modules-right > widget:last-child > #workspaces {
+    margin-right: 0;
+}
+
+#wireplumber{
+  color: #dedede;  
+}
+
+#pulseaudio {
+    padding: 10px 10px;
+    font-size: 20px;
+    border: solid 2px #6C9464;
+    color: #6C9464;
+}
+
+#backlight {    
+    color: #dedede;
+}
+
+#clock {
+    border: solid 2px #6C9464;
+    color: #6C9464;
+}
+
+#battery {
+    border: solid 2px #6C9464;
+    color: #6C9464;
+}
+
+#battery.charging,
+#battery.full,
+#battery.plugged {
+    border: solid 2px #6C9464;
+    color: #6C9464;
+}
+
+@keyframes blink {
+    to {
+        background-color: rgba(30, 34, 42, 0.5);
+        color: #abb2bf;
+    }
+}
+
+#battery.warning:not(.charging) {
+  color: #B77E64
+}
+
+#battery.critical:not(.charging) {
+    color: #DE6E7C;
+}
+
+label:focus {
+    background-color: #000000;
+}
+
+#disk {
+    background-color: #964b00;
+}
+
+#bluetooth {
+    color: #707d9d;
+}
+
+#bluetooth.disconnected {
+    color: #777696;
+}
+
+#network {  
+    background-color: rgba(0,0,0,0.9);
+    border: solid 2px #6C9464;
+    color: #6C9464;
+}
+
+#network.disconnected {
+    border: solid 2px #6C9464;
+    color: #777696;
+}
+
+#custom-media {
+    background-color: #66cc99;
+    color: #2a5c45;
+    min-width: 100px;
+}
+
+#custom-media.custom-spotify {
+    background-color: #66cc99;
+}
+
+#custom-media.custom-vlc {
+    background-color: #ffa000;
+}
+
+#temperature {    
+    background-color: #f0932b;
+}
+
+#temperature.critical {
+    background-color: #eb4d4b;
+}
+
+#tray > .passive {
+    -gtk-icon-effect: dim;
+}
+
+#tray > .needs-attention {
+    -gtk-icon-effect: highlight;
+    background-color: #eb4d4b;
+}
+
+#idle_inhibitor {
+    
+    background-color: #2d3436;
+}
+
+#idle_inhibitor.activated {
+    background-color: #ecf0f1;
+    color: #2d3436;
+}
+
+#language {
+    background: #00b093;
+    color: #740864;
+    padding: 0 0px;
+    margin: 0 5px;
+    min-width: 16px;
+}
+
+#keyboard-state {
+    background: #97e1ad;
+    color: #000000;
+    padding: 0 0px;
+    margin: 0 5px;
+    min-width: 16px;
+}
+
+#keyboard-state > label {
+    padding: 0 0px;
+}
+
+#keyboard-state > label.locked {
+    background: rgba(0, 0, 0, 0.2);
+}
