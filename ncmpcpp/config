@@ -451,7 +451,7 @@ visualizer_color = yellow, green
 ## How shall screen switcher work?
 ##
 ## - "previous" - switch between the current and previous screen.
-## - "screen1,...,screenN" - switch between given sequence of screens.
+## - "screen1,...,screenN" - switch between given sequence of screens
 ##
 ## Screens available for use: help, playlist, browser, search_engine,
 ## media_library, playlist_editor, tag_editor, outputs, visualizer, clock,

@@ -3,7 +3,7 @@
 }
 /* The name of the window itself */
 #window {
-  background-color: rgba(0,0,0,0.6);
+  background-color: rgba(0,0,0,0.8);
   border: solid 2px #6C9464;
   box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -4px rgba(0, 0, 0, 0.1);
   border-radius: 1rem;
@@ -15,7 +15,7 @@
   /* The name of the scrolled window containing all of the entries */
 }
 #window #outer-box #input {
-  background-color: rgba(0, 0, 0, 0.6);
+  background-color: rgba(0, 0, 0, 0.8);
   color: #f2f2f2;
   border: #6C9464;
   border-bottom: 1px solid rgba(0, 0, 0, 0.2);
@@ -40,7 +40,7 @@
   color: #fff;
   border: #6C9464
   background-color: rgba(0, 0, 0, 0.1);
-  padding: 0.6rem 1rem;
+  padding: 0.8rem 1rem;
   /* The name of all images in entries displayed in image mode */
   /* The name of all the text in entries */
 }
